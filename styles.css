@@ -1,0 +1,204 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family: sans-serif;
+  font-size: 2.5vmin;
+}
+
+.flag-names {
+  position: relative;
+  display: table;
+  margin: 4vmin auto;
+  border: 1px solid;
+  padding: 2vmin 3vmin;
+  border-radius: 3px;
+  user-select: none;
+  cursor: pointer;
+}
+
+.flag-names:hover {
+  background: rgba(0,0,0,.1);
+}
+
+.name {
+  text-transform: capitalize;
+  white-space: nowrap;
+  margin-bottom: -4vmin;
+}
+
+.flags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.flag {
+  width: 14vmin;
+  height: 9vmin;
+  margin: 5vmin;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.armenia {
+  background: linear-gradient(#d90012 33%, #00359f 33%, #00359f 66%, #f2a800 66%);
+}
+
+.austria {
+  background: linear-gradient(#ed2939 33%, white 33%, white 66%, #ed2939 66%);
+}
+
+.belgium {
+  background: linear-gradient(90deg, black 33%, #ffe936 33%, #ffe936 66%, #ff0f21 66%);
+}
+
+.botswana {
+  background: linear-gradient(#75aadb 40%, white 40%, white 43%, black 43%, black 57%, white 57%, white 60%, #75aadb 60%);
+}
+
+.bulgaria {
+  background: linear-gradient(white 33%, #00966e 33%, #00966e 66%, #d62817 66%);
+}
+
+.chad {
+  background: linear-gradient(90deg, #002664 33%, #ffcc00 33%, #ffcc00 66%, #c60c30 60%, #c60c30);
+}
+
+.columbia {
+  background: linear-gradient(#fcd116 50%, #003893 50%, 75%, #ce1126 75%, #ce1126);
+}
+
+.congo {
+  background: linear-gradient(135deg, #009444 40%, #fbde4a 40%, #fbde4a 61%, #dc241f 61%, #dc241f);
+}
+
+.costa-rica {
+  background: linear-gradient(#002b7f 16.5%, white 16.5%, white 33%, #ce1126 33%, #ce1126 66%, white 66%, white 82.5%, #002b7f 82.5%);
+}
+
+.estonia {
+  background: linear-gradient(#0072ca 33%, black 33%, black 66%, white 66%);
+}
+
+.france {
+  background: linear-gradient(90deg, #0055a4 33%, white 33%, white 66%, #ef4135 66%);
+}
+
+.gabon {
+  background: linear-gradient(#009e60 33%, #fcd116 33%, #fcd116 66%, #3a75c4 66%);
+}
+
+.gambia {
+  background: linear-gradient(#ce1126 33%, white 33%, white 38%, #0c1c8c 38%, #0c1c8c 61%, white 61%, white 66%, #3a7728 66%);
+}
+
+.germany {
+  background: linear-gradient(black 33%, red 33%, red 66%, #fc0 66%);
+}
+
+.guinea {
+  background: linear-gradient(90deg, #ce1126 33%, #fcd116 33%, #fcd116 66%, #009460 66%);
+}
+
+.hungary {
+  background: linear-gradient(#cd2a3e 33%, white 33%, white 66%, #436f4d 66%);
+}
+
+.indonesia {
+  background: linear-gradient(#ce1126 50%, white 50%);
+}
+
+.ireland {
+  background: linear-gradient(90deg, #169b62 33%, white 33%, white 66%, #ff883e 66%);
+}
+
+.italy {
+  background: linear-gradient(90deg, #009147 33%, white 33%, white 66%, #ce2b37 66%);
+}
+
+.ivory-coast {
+  background: linear-gradient(90deg, #f77f00 33%, white 33%, white 66%, #009e60 66%);
+}
+
+.latvia {
+  background: linear-gradient(#9e3039 40%, white 40%, white 60%, #9e3039 60%);
+}
+
+.lithuania {
+  background: linear-gradient(#fdb913 33%, #006a44 33%, #006a44 66%, #c1272d 66%);
+}
+
+.luxembourg {
+  background: linear-gradient(#ed2939 33%, white 33%, white 66%, #00a2de 66%);
+}
+
+.mali {
+  background: linear-gradient(90deg, #1ab53a 33%, #fcd116 33%, #fcd116 66%, #ce1126 66%);
+}
+
+.mauritius {
+  background: linear-gradient(#ea2839 25%, #1a206d 25%, #1a206d 50%, #ffd500 50%, #ffd500 75%, #00a551 75%);
+}
+
+.monaco {
+  background: linear-gradient(#ce1126 50%, white 50%);
+}
+
+.netherlands {
+  background: linear-gradient(#ae1c28 33%, white 33%, white 66%, #21468b 66%);
+}
+
+.nigeria {
+  background: linear-gradient(90deg, #008753 33%, white 33%, white 66%, #008753 66%);
+}
+
+.peru {
+  background: linear-gradient(90deg, #d91023 33%, white 33%, white 66%, #d91023 66%);
+}
+
+.poland {
+  background: linear-gradient(white 50%, #d4213d 50%);
+}
+
+.romania {
+  background: linear-gradient(90deg, #002b7f 33%, #fcd116 33%, #fcd116 66%, #ce1126 66%);
+}
+
+.russia {
+  background: linear-gradient(white 33%, #0035a3 33%, #0035a3 66%, #d5281a 66%);
+}
+
+.sierra-leone {
+  background: linear-gradient(#1ab53a 33%, white 33%, white 66%, #0071c9 66%);
+}
+
+.tanzania {
+  background: linear-gradient(-35deg, #00a2de 36%, #fcd116 36%, #fcd116 40%, black 40%, black 59%, #fcd116 59%, #fcd116 63%, #1ab53a 63%);
+}
+
+.thailand {
+  background: linear-gradient(#ed1c24 16.5%, white 16.5%, white 33%, #241d4f 33%, #241d4f 66%, white 66%, white 82.5%, #ed1c24 82.5%);
+}
+
+.trinidad-tobago {
+  background: linear-gradient(45deg, #da1a35 40%, white 40%, white 43%, black 43%, black 58%, white 58%, white 61%, #da1a35 60%);
+}
+
+.ukraine {
+  background: linear-gradient(#005bbb 50%, #ffd500 50%);
+}
+
+.yemen {
+  background: linear-gradient(#ce1126 33%, white 33%, white 66%, black 66%);
+}

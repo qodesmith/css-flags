@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Flags!</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="flag-names">Show Flag Names</div>
+  <div class="flags">
+    <div class="flag armenia"></div>
+    <div class="flag austria"></div>
+    <div class="flag belgium"></div>
+    <div class="flag botswana"></div>
+    <div class="flag bulgaria"></div>
+    <div class="flag chad"></div>
+    <div class="flag columbia"></div>
+    <div class="flag congo"></div>
+    <div class="flag costa-rica"></div>
+    <div class="flag estonia"></div>
+    <div class="flag france"></div>
+    <div class="flag gabon"></div>
+    <div class="flag gambia"></div>
+    <div class="flag germany"></div>
+    <div class="flag guinea"></div>
+    <div class="flag hungary"></div>
+    <div class="flag indonesia"></div>
+    <div class="flag ireland"></div>
+    <div class="flag italy"></div>
+    <div class="flag ivory-coast"></div>
+    <div class="flag latvia"></div>
+    <div class="flag lithuania"></div>
+    <div class="flag luxembourg"></div>
+    <div class="flag mali"></div>
+    <div class="flag mauritius"></div>
+    <div class="flag monaco"></div>
+    <div class="flag netherlands"></div>
+    <div class="flag nigeria"></div>
+    <div class="flag peru"></div>
+    <div class="flag poland"></div>
+    <div class="flag romania"></div>
+    <div class="flag russia"></div>
+    <div class="flag sierra-leone"></div>
+    <div class="flag tanzania"></div>
+    <div class="flag thailand"></div>
+    <div class="flag trinidad-tobago"></div>
+    <div class="flag ukraine"></div>
+    <div class="flag yemen"></div>
+  </div>
+
+  <script>
+    const button = document.querySelector('.flag-names');
+    const flags = document.querySelectorAll('.flag');
+    const flagLength = flags.length;
+
+    button.addEventListener('click', e => {
+      const showing = e.target.classList.contains('showing');
+
+      if (showing) {
+        e.target.classList.remove('showing');
+        flags.forEach(flag => {
+          flag.innerHTML = '';
+        });
+      } else {
+        e.target.classList.add('showing');
+        flags.forEach(flag => {
+          const name = flag.className.split(' ')[1];
+          flag.innerHTML = `<div class="name">${name}</div>`;
+        });
+      }
+    });
+  </script>
+</body>
+</html>
