@@ -11,3 +11,5 @@ The [challenge](https://codepen.io/thebabydino/post/css-the-world-flags) was to 
 * In all your generated CSS (you may use any preprocessor you wish, this applies to the compiled code), you are only allowed to have **1 background rule with 1 linear-gradient() with less than 10 stops**
 
 I added some JavaScript with a button at the top just to be able to toggle the country names for each flag. I had to. But the design of the flags are all pure CSS.
+
+You can [view my flags here](https://rawgit.com/qodesmith/css-flags/master/index.html).
