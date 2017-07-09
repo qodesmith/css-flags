@@ -7,7 +7,7 @@
 </head>
 <body>
   <a href="https://github.com/qodesmith/css-flags">Github repo</a>
-  <div class="flag-names">Show Flag Names</div>
+  <div class="flag-names">Toggle Flag Names</div>
   <div class="flags">
     <div class="flag armenia"></div>
     <div class="flag austria"></div>
@@ -52,7 +52,6 @@
   <script>
     const button = document.querySelector('.flag-names');
     const flags = document.querySelectorAll('.flag');
-    const flagLength = flags.length;
 
     button.addEventListener('click', e => {
       const showing = e.target.classList.contains('showing');
